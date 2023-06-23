@@ -1,0 +1,17 @@
+{
+  "short_name": "WuDo",
+  "name": "Plataforma WuDo",
+  "start_url": "/login",
+  "icons": [
+    {
+      "src": "logo_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#e0f2fe",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#1d4ed8",
+  "description": "Plataforma WuDo"
+}

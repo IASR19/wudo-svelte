@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+
+  pocketbase:
+    build:
+      context: .
+      dockerfile: dockerfiles/pocketbase/dockerfile
+    volumes:
+      - ./dockerfiles/pocketbase/pb_migrations:/pb/pb_migrations
+    ports:
+      - 8080:8080
+
+  sveltekit:
+    build:
+      context: .
+      dockerfile: dockerfiles/sveltekit/dockerfile
+      target: server
+    ports:
+      - 80:3000
